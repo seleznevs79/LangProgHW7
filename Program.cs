@@ -99,6 +99,8 @@
 //      Console.WriteLine($" Искомый элемент массива: { c } ");
 // }
 
+
+
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в 
 // каждом  столбце.
 
@@ -140,11 +142,11 @@ Console.WriteLine();
 }
 }
 
-for(int j = 0; j < array.GetLength(0); j++){
+for(int j = 0; j < array.GetLength(1); j++){
    double sum = 0;  
-for(int i = 0; i < array.GetLength(1); i++){
+for(int i = 0; i < array.GetLength(0); i++){
     sum += array [i,j];
 }
-double sred=sum/ array.GetLength(0);
+double sred=sum/ array.GetLength(1);
 Console.Write($" ; { sred} ");
 }
